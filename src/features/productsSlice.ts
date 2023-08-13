@@ -1,21 +1,9 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import axios from "axios";
-
-interface Product {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  category: string;
-  image: string;
-  rating: {
-    rate: number;
-    count: number;
-  };
-}
+import { ProductsType } from "../types";
 
 interface ProductsState {
-  products: Product[];
+  products: ProductsType[];
   status: "idle" | "loading" | "succeeded" | "failed";
   error: string | null;
 }
@@ -29,7 +17,7 @@ const initialState: ProductsState = {
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",
   async () => {
-    const response = await axios.get<Product[]>(
+    const response = await axios.get<ProductsType[]>(
       "https://fakestoreapi.com/products"
     );
     return response.data;
@@ -46,7 +34,7 @@ const productsSlice = createSlice({
     });
     builder.addCase(
       fetchProducts.fulfilled,
-      (state, action: PayloadAction<Product[]>) => {
+      (state, action: PayloadAction<ProductsType[]>) => {
         state.status = "succeeded";
         state.products = action.payload;
       }
