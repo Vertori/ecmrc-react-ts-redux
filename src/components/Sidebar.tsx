@@ -50,7 +50,7 @@ const Sidebar = () => {
           {/* total */}
           <div className="uppercase font-semibold ">
             <span className="mr-2 ">Total:</span>
-            {Number(total).toFixed(2)} zł
+            {total.toFixed(2)} zł
           </div>
           {/* clear cart icon*/}
           <div
