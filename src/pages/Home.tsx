@@ -8,7 +8,7 @@ import { RootState, AppDispatch } from "../app/store";
 import { ProductsType } from "../types";
 
 const Home = () => {
-  const dispatch: AppDispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const products = useSelector((state: RootState) => state.products.products);
   const status = useSelector((state: RootState) => state.products.status);
   const error = useSelector((state: RootState) => state.products.error);
