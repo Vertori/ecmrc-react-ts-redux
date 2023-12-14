@@ -32,7 +32,7 @@
 
 ## About Project
 
-E-commerce website built using <b>React JS</b> with <b>Redux</b>, <b>Typescript</b> and designed using <b>Tailwind CSS</b>. Website is fully responsive and uses reusable components that take certain props. All of the displayed shop items are fetched from Fake Store API using Axios. The website allows users to add items to the shopping cart and fully manage the cart: you can increase and decrease the number of items in the cart, remove individual items in the cart, and clear the entire cart with one click. In addition, the shopping cart continuously updates the number of items in it and displays the calculated value of individual items and the total value of the entire shopping cart. The Context API allows access to all store products and all functions related to shopping cart status management from anywhere on the site. Each store item has its own dynamically generated page, which contains detailed product information and, using Swiper, allows to browse other products.
+E-commerce website built using <b>React JS</b> with <b>Redux</b>, <b>Typescript</b> and designed using <b>Tailwind CSS</b>. Website is fully responsive and uses reusable components that take certain props. All of the displayed shop items are fetched from Fake Store API using Axios. The website allows users to add items to the shopping cart and fully manage the cart: you can increase and decrease the number of items in the cart, remove individual items in the cart, and clear the entire cart with one click. In addition, the shopping cart continuously updates the number of items in it and displays the calculated value of individual items and the total value of the entire shopping cart. Redux allows access to all store products and all functions related to shopping cart status management from anywhere on the site. Each store item has its own dynamically generated page, which contains detailed product information and, using Swiper, allows to browse other products.
 
 ## Screenshots
 
@@ -53,7 +53,6 @@ E-commerce website built using <b>React JS</b> with <b>Redux</b>, <b>Typescript<
 - ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 - ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 - Axios
-- Context API
 - Swiper
 - React Icons
 - React Spinners
